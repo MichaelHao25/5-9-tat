@@ -13,8 +13,7 @@ background:rgba(255,255,255,.8);
 	font-family arial,'micrsoft Yahei'
  }
 
-.por
-	position relative
+
 .header
 	height 48px
 	overflow hidden
@@ -231,12 +230,17 @@ background:rgba(255,255,255,.8);
 			color #000000
 			text-align center
 			transform scale(0.8)
-
+.por
+	position relative
 .z10
 	z-index 10
+	&.active
+		z-index 13
 .z11
 	z-index 11
 	background #ffffff
+	&.active
+		z-index 14
 body.all-product-hide-main-footer
 	.main
 		display none
@@ -255,6 +259,12 @@ body.all-product-hide-main-footer
 	&.active
 		position relative
 		transform translateY(0)
+	// .ovh
+	// 	display block
+	// 	&.active
+	// 	// 	overflow hidden
+	// 		.child-content
+	// 			display none
 	.item
 		display flex
 		height 70px
@@ -287,7 +297,9 @@ body.all-product-hide-main-footer
 		padding 16px 16px 0
 		transition 0.3s
 		transform translateY(-100%)
+		visibility hidden
 		&.active
+			visibility visible
 			position relative
 			transform translateY(0)
 		a

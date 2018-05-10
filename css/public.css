@@ -12,9 +12,6 @@ body {
   font-size: 16Px;
   font-family: arial, 'micrsoft Yahei';
 }
-.por {
-  position: relative;
-}
 .header {
   height: 0.48rem;
   overflow: hidden;
@@ -288,12 +285,21 @@ body {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
+.por {
+  position: relative;
+}
 .z10 {
   z-index: 10;
+}
+.z10.active {
+  z-index: 13;
 }
 .z11 {
   z-index: 11;
   background: #fff;
+}
+.z11.active {
+  z-index: 14;
 }
 body.all-product-hide-main-footer .main {
   display: none;
@@ -356,8 +362,10 @@ body.all-product-hide-main-footer .footer {
   transition: 0.3s;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  visibility: hidden;
 }
 .all-product .child-content.active {
+  visibility: visible;
   position: relative;
   -webkit-transform: translateY(0);
           transform: translateY(0);

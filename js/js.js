@@ -10,7 +10,6 @@ var mySwiper = new Swiper('.banner .swiper-container', {
 var mySwiper = new Swiper('.hot .swiper-container', {
     loop: true,
     autoplay: 3000,
-    // pagination: '.hot .swiper-pagination',
 })
 var mySwiper = new Swiper('.new-sms .swiper-container', {
     loop: true,
@@ -44,6 +43,8 @@ $(window).on('scroll', function () {
     }
 })
 $('.all-product .item').on('click',function() {
+    $(this).siblings('.por').children('.child-content').removeClass('active')
+    // $('.all-product .child-content').removeClass('active');
     $(this).prevAll('.item').addClass('active');
     $(this).addClass('active').nextAll().removeClass('active');
     $(this).next('.por').addClass('active');

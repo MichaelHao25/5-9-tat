@@ -363,12 +363,14 @@ body.all-product-hide-main-footer .footer {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   visibility: hidden;
+  opacity: 0;
 }
 .all-product .child-content.active {
   visibility: visible;
   position: relative;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  opacity: 1;
 }
 .all-product .child-content a {
   display: block;

@@ -12,6 +12,8 @@ background:rgba(255,255,255,.8);
  	font-size: 16Px;
  }
 
+.por
+	position relative
 .header
 	height 48px
 	overflow hidden
@@ -115,4 +117,207 @@ background:rgba(255,255,255,.8);
 			img
 				display block
 				width 32px
+	.hot
+		h3
+			padding 22px 0 32px 0
+			font-size 24px
+			color #d59ea5
+			text-align center
+		a
+			display block
+			width 320px
+			margin 0 auto
+			.pic
+				img
+					display block
+					width 100%
+			h4
+			.cost
+				font-size 16px
+				color #000000
+				line-height 26px
+				text-align center
+		.swiper-pagination
+			span
+				background #fff
+				&.swiper-pagination-bullet-active
+					opacity 1
+	.card
+		position relative
+		margin 32px 16px 0
+		h3
+			position absolute
+			top 11px
+			left 14px
+			font-size 16px
+			color #4a4a4a
+			line-height 1
+			z-index 2
+			font-weight bold
+		p
+			position absolute
+			top 42px
+			left 12px
+			font-size 24px
+			color #4a4a4a
+			line-height 1
+		.item
+			a
+			img
+				display block
+				width 100%
+				border-radius 5px
+		.swiper-pagination
+			span
+				background #fff
+				&.swiper-pagination-bullet-active
+					opacity 1
+	.contact-us
+		margin-top 16px
+		display flex
+		height 48px
+		justify-content flex-start
+		align-items center
+		border-top 1px solid #d8d8d8
+		border-bottom 1px solid #d8d8d8
+		a
+			display block
+			width 32px
+			margin-left 8px
+			img
+				display block
+				width 100%
+	.subscribe
+		padding 8px
+		.form
+			display flex
+			border 1px solid #979797
+		input
+			display block
+			border none
+			outline none
+			background none
+			height 40px
+		.text
+			flex 1 1 auto
+			padding-left 16px
+		.submit
+			flex 0 0 40px
+			width 40px
+			background url('../img/0e0bea92295bdf145af72a9e00e2cee2-44+44.svg') center center/40px auto no-repeat
 			
+
+.footer
+	background url('../img/7527de8009d52092a45f569b36b26585-375+280.png') center top/cover no-repeat
+	.nav
+		padding-top 42px
+		display block
+		border none
+		a
+			margin-bottom 20px
+			display block
+			font-size 14px
+			color #000000
+			line-height 20px
+	.copy-right
+		padding-top 38px
+		a
+		p
+			display block
+			padding-bottom 10px
+			font-size 12px
+			line-height 1
+			color #000000
+			text-align center
+			transform scale(0.8)
+
+.z10
+	z-index 10
+.z11
+	z-index 11
+	background #ffffff
+body.all-product-hide-main-footer
+	.main
+		display none
+	.footer
+		display none
+.all-product
+	position absolute
+	top 0
+	left 0
+	right 0
+	display flex
+	flex-direction column
+	background #ffffff
+	transform translateY(-100%)
+	transition 0.3s
+	&.active
+		position relative
+		transform translateY(0)
+	.item
+		display flex
+		height 70px
+		padding 0 16px
+		align-items center
+		justify-content flex-start
+		border-bottom 1px solid #d8d8d8
+		background #fff url('../img/82bfa42ab12f5da394c7a585f67e7e41-44+44.svg') right 16px center/20px auto no-repeat
+		.pic
+			width 40px
+			img
+				display block
+				width 100%
+		.content
+			padding-left 17px
+			font-size 14px
+			color #000000
+			line-height 20px
+			small
+				font-size 12px
+				color #9b9b9b
+	.child-content
+		position absolute
+		display flex
+		box-sizing border-box
+		justify-content space-between
+		flex-wrap wrap
+		background #f9f9f9
+		overflow hidden
+		padding 16px 16px 0
+		transition 0.3s
+		transform translateY(-100%)
+		&.active
+			position relative
+			transform translateY(0)
+		a
+			display block
+			margin-bottom 16px
+			width 163px
+			height 48px
+			line-height 48px
+			font-size 14px
+			color #4a4a4a
+			text-align center
+			transition 0.3s
+			background #e8dada
+			border-radius 6px
+			&:hover
+				color #ffffff
+				background #d6b9bc
+				
+
+
+.layout-gotop
+	position fixed
+	bottom 20px
+	right 0
+	width 40px
+	z-index 10
+	transform translateX(100%)
+	transition 0.3s
+	&.active
+		transform translateX(0)
+	img
+		display block
+		width 40px
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<video src=""></video>
+<div class="recorderControl"></div>
+<a href="#" class="download">aaa</a>
+<body>
+    <script>
+        navigator.mediaDevices.getUserMedia({
+            audio: true,
+            video: true
+        }).then(function (stream) {
+            var recorder = new MediaRecorder(stream);
+            var recorderButton = document.querySelector(".recorderControl");
+            var video = document.querySelector("video");
+            video.src = URL.createObjectURL(stream); //把获取的视屏流和音频流放到界面的video容器里
+
+
+            recorderButton.onclick = function () {
+
+                this.textContent === "开始录制" ? video.play() : video.pause();
+                this.textContent === "开始录制" ? recorder.start() : recorder.stop();
+                this.textContent = this.textContent === "开始录制" ? "停止" : "开始录制";
+
+            }
+            //得到有效数据  收集数据
+            var buffers = null;
+            var download = document.querySelector(".download");
+            recorder.ondataavailable = function (event) {
+                //收集媒体设备获得到的可以使用的数据
+                console.log(event.data);
+                buffers = event.data
+            }
+            recorder.onstop = function () {
+                //停止录制时触发函数
+                var url = URL.createObjectURL(buffers);
+                download.href = url;
+                buffers = null;
+            }
+
+        }).catch(function (error) {
+            alert(error); //抛出异常错误
+        });
+    </script>
+</body>
+
+</html>

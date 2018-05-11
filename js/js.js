@@ -13,12 +13,12 @@ var mySwiper = new Swiper('.hot .swiper-container', {
 })
 var mySwiper = new Swiper('.new-sms .swiper-container', {
     loop: true,
-    autoplay: 3000,
+    // autoplay: 3000,
     pagination: '.new-sms .swiper-pagination',
 })
 var mySwiper = new Swiper('.sale .swiper-container', {
     loop: true,
-    autoplay: 3000,
+    // autoplay: 3000,
     pagination: '.sale .swiper-pagination',
 })
 var mySwiper = new Swiper('.child-menu .swiper-container', {
@@ -43,7 +43,7 @@ $(window).on('scroll', function () {
     }
 })
 $('.all-product .item').on('click',function() {
-    $(this).siblings('.por').children('.child-content').removeClass('active')
+    $(this).next('.por').siblings('.por').children('.child-content').removeClass('active')
     // $('.all-product .child-content').removeClass('active');
     $(this).prevAll('.item').addClass('active');
     $(this).addClass('active').nextAll().removeClass('active');

@@ -43,6 +43,7 @@ $(window).on('scroll', function () {
     }
 })
 $('.all-product .item').on('click',function() {
+    $(this).toggleClass('arrow-toggle')
     $(this).next('.por').siblings('.por').children('.child-content').removeClass('active')
     // $('.all-product .child-content').removeClass('active');
     $(this).prevAll('.item').addClass('active');

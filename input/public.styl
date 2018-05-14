@@ -88,7 +88,20 @@ background:rgba(255,255,255,.8);
 			margin 0 auto
 	.menu
 		padding-right 20px
-		background url('../img/82bfa42ab12f5da394c7a585f67e7e41-44+44.svg') right center/20px auto no-repeat
+		position relative
+		&.active
+			&:after
+				transform translateY(-50%) rotateZ(0)	
+		&:after
+			content ''
+			position absolute
+			right 0
+			top 50%
+			width 20px
+			height 20px
+			transform translateY(-50%) rotateZ(90deg)
+			background url('../img/82bfa42ab12f5da394c7a585f67e7e41-44+44.svg') center center/20px auto no-repeat
+			transition 0.3s
 
 .main
 	.banner
@@ -241,41 +254,45 @@ background:rgba(255,255,255,.8);
 	position relative
 .z10
 	z-index 10
-	&.active
-		z-index 13
 .z11
 	z-index 11
 	background #ffffff
-	&.active
-		z-index 14
 body.all-product-hide-main-footer
 	.main
 		display none
 	.footer
 		display none
 .all-product
-	position absolute
-	top 0
-	left 0
-	right 0
+	// position absolute
+	// top 0
+	// left 0
+	// right 0
 	display flex
 	flex-direction column
 	background #ffffff
-	transform translateY(-100%)
-	transition 0.3s
-	&.active
-		position relative
-		transform translateY(0)
+	display none
 	.item
+		position relative
 		display flex
 		height 70px
 		padding 0 16px
 		align-items center
 		justify-content flex-start
 		border-bottom 1px solid #d8d8d8
-		background #fff url('../img/82bfa42ab12f5da394c7a585f67e7e41-44+44.svg') right 16px center/20px auto no-repeat
+		&:after
+			content ''
+			position absolute
+			right 16px
+			width 20px
+			height 20px
+			background url('../img/82bfa42ab12f5da394c7a585f67e7e41-44+44.svg') center center/20px auto no-repeat
+			transition 0.3s
+			transform rotateZ(90deg)
 		&.arrow-toggle
-			background-image url('../img/expand.svg')
+			&:after
+				transform rotateZ(0)
+		&+.por
+			display none
 		.pic
 			width 40px
 			img
@@ -290,7 +307,6 @@ body.all-product-hide-main-footer
 				font-size 12px
 				color #9b9b9b
 	.child-content
-		position absolute
 		display flex
 		box-sizing border-box
 		justify-content space-between
@@ -298,15 +314,6 @@ body.all-product-hide-main-footer
 		background #f9f9f9
 		overflow hidden
 		padding 16px 16px 0
-		transition 0.3s
-		transform translateY(-100%)
-		visibility hidden
-		opacity 0
-		&.active
-			visibility visible
-			position relative
-			transform translateY(0)
-			opacity 1
 		a
 			display block
 			margin-bottom 16px

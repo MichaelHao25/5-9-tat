@@ -8,8 +8,8 @@ var mySwiper = new Swiper('.banner .swiper-container', {
     pagination: '.banner .swiper-pagination',
 })
 var mySwiper = new Swiper('.hot .swiper-container', {
-    loop: true,
     autoplay: 3000,
+    slidesPerView: 2.5,
 })
 var mySwiper = new Swiper('.new-sms .swiper-container', {
     loop: true,

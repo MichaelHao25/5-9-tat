@@ -102,11 +102,11 @@ background:rgba(255,255,255,.8);
 				&.swiper-pagination-bullet-active
 					opacity 1
 	.child-menu
-		padding 16px 8px
+		padding 4px
 		a
-			margin 8px
+			margin 4px
 			display flex
-			width 126px
+			width calc(100% - 8px)
 			height 48px
 			align-items center
 			justify-content center
@@ -118,6 +118,7 @@ background:rgba(255,255,255,.8);
 				display block
 				width 32px
 	.hot
+		padding-bottom 16px
 		h3
 			padding 22px 0 32px 0
 			font-size 24px
@@ -125,7 +126,7 @@ background:rgba(255,255,255,.8);
 			text-align center
 		a
 			display block
-			width 320px
+			width 150px
 			margin 0 auto
 			.pic
 				img
@@ -133,6 +134,11 @@ background:rgba(255,255,255,.8);
 					width 100%
 			h4
 			.cost
+				white-space nowrap
+				width 95%
+				margin 0 auto
+				overflow hidden
+				text-overflow ellipsis
 				font-size 16px
 				color #000000
 				line-height 26px
@@ -144,7 +150,7 @@ background:rgba(255,255,255,.8);
 					opacity 1
 	.card
 		position relative
-		margin 32px 16px 0
+		margin 16px 8px 0
 		h3
 			position absolute
 			top 11px
@@ -201,6 +207,7 @@ background:rgba(255,255,255,.8);
 		.text
 			flex 1 1 auto
 			padding-left 16px
+			font-size 16px
 		.submit
 			flex 0 0 40px
 			width 40px
@@ -259,12 +266,6 @@ body.all-product-hide-main-footer
 	&.active
 		position relative
 		transform translateY(0)
-	// .ovh
-	// 	display block
-	// 	&.active
-	// 	// 	overflow hidden
-	// 		.child-content
-	// 			display none
 	.item
 		display flex
 		height 70px

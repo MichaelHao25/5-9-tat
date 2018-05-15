@@ -7,9 +7,17 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "启动 Chrome 并打开 localhost",
-            "url": "http://localhost:8080",
+            "name": "Launch Chrome",
+            "url": "http://localhost:3000",
             "webRoot": "${workspaceFolder}"
-        }
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Attach to Chrome",
+            "port": 3000,
+            "sourceMaps": true,
+            "webRoot": "${workspaceFolder}"
+        },
     ]
 }

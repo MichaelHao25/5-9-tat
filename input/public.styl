@@ -105,6 +105,10 @@ background:rgba(255,255,255,.8);
 
 .main
 	.banner
+		&.black
+			.swiper-pagination
+				span
+					background #000000	
 		a
 		img
 			display block
@@ -225,8 +229,96 @@ background:rgba(255,255,255,.8);
 			flex 0 0 40px
 			width 40px
 			background url('../img/0e0bea92295bdf145af72a9e00e2cee2-44+44.svg') center center/40px auto no-repeat
+	.product-list-type
+		padding 4px
+		border-bottom 1px solid #d8d8d8
+		.swiper-slide
+			width 88px
+			a
+				display block
+				margin 4px
+				width calc(100% - 8px)
+				height 40px
+				font-size 14px
+				color #4a4a4a
+				background #e8dada
+				text-align center
+				line-height 40px
+				border-radius 6px
+				transition 0.3s
+				overflow hidden
+				text-overflow ellipsis
+				white-space nowrap
+				&:hover
+					color #ffffff
+					background #d6b9bc
+	.product-list-container
+		display flex
+		justify-content space-between
+		padding 16px 16px 0
+		flex-wrap wrap
+		a
+			margin-bottom 16px
+			display block
+			width 160px
+			.pic
+				img
+					display block
+					width 100%
+			h4
+				padding-top 8px
+				font-size 13px
+				color #4a4a4a
+				line-height 19px
+			.cost
+				font-size 13px
+				color #4a4a4a
+				line-height 2
+	.product-details
+		padding 0 8px
+		.name
+		.cost
+		.id
+			padding-top 8px
+			font-size 16px
+			color #000000
+			line-height 24px
+		.id
 			
-
+			font-size 10px
+			text-align right
+			line-height 16px
+			border-bottom 1px solid #d8d8d8
+		.shop
+			margin-top 16px
+			display block
+			border-radius 4px
+			font-size 14px
+			color #ffffff
+			line-height 44px
+			background #b98d92
+			text-align center
+		.product-info
+			padding-top 77px
+			.introduction
+				padding-bottom 8px
+				margin-bottom 16px
+				font-size 16px
+				line-height 24px
+				color #000000
+				border-bottom 1px solid #d8d8d8
+			p
+				font-size 14px
+				color #000000
+				line-height 24px
+			.pic
+				padding-bottom 8px
+				padding-top 30px
+				img
+					display block
+					width 100%
+				&+.pic
+					padding-top 0
 .footer
 	background url('../img/7527de8009d52092a45f569b36b26585-375+280.png') center top/cover no-repeat
 	.nav
@@ -332,6 +424,7 @@ body.all-product-hide-main-footer
 				
 
 
+
 .layout-gotop
 	position fixed
 	bottom 20px
@@ -346,3 +439,21 @@ body.all-product-hide-main-footer
 		display block
 		width 40px
 
+
+.public-number-select-plug
+	margin-top 16px
+	width 120px
+	height 40px
+	border 1px solid #d8d8d8
+	display flex
+	span
+	input
+		display block
+		flex 1
+		border none
+		outline none
+		width 40px
+		text-align center
+	input
+		appearance none
+		font-size 16px

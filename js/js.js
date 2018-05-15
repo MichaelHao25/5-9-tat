@@ -11,6 +11,7 @@ var mySwiper = new Swiper('.hot .swiper-container', {
     autoplay: 3000,
     slidesPerView: 2.5,
 })
+
 var mySwiper = new Swiper('.new-sms .swiper-container', {
     loop: true,
     // autoplay: 3000,
@@ -26,6 +27,11 @@ var mySwiper = new Swiper('.child-menu .swiper-container', {
     slidesPerColumn: 2,
     slidesPerColumnFill: 'row',
 })
+var mySwiper = new Swiper('.product-list-type .swiper-container', {
+    slidesPerView: 'auto',
+})
+
+
 
 
 $('.layout-gotop').on('click', function () {
@@ -74,3 +80,12 @@ $('.all-product-target').on('click', function () {
 // $('.all-product .ovh').on('click',function() {
 //     $(this).siblings().addClass('active');
 // })
+
+
+$('.public-number-select-plug').on('click',function(e) {
+    var value = parseInt($(this).children('.value').val());
+    $(e.target).hasClass('add')&&value++;
+    $(e.target).hasClass('min')&&value--;
+    value<1&&(value=1);
+    $(this).children('.value').val(value)
+})

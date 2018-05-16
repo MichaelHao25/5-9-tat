@@ -8,12 +8,10 @@ background:rgba(255,255,255,.8);
 
 
  filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
- body{
- 	font-size: 16Px;
+body
+	font-size 16Px
 	font-family arial,'micrsoft Yahei'
- }
-
-
+	user-select none
 .header
 	height 48px
 	overflow hidden
@@ -262,9 +260,22 @@ background:rgba(255,255,255,.8);
 			display block
 			width 160px
 			.pic
+				position relative
 				img
 					display block
 					width 100%
+				.new
+					position absolute
+					left 0
+					bottom 0
+					width 35px
+					height 18px
+					border-radius 9px
+					font-size 10px
+					color #ffffff
+					background #d59ea5
+					text-align center
+					line-height 18px
 			h4
 				padding-top 8px
 				font-size 13px
@@ -319,6 +330,204 @@ background:rgba(255,255,255,.8);
 					width 100%
 				&+.pic
 					padding-top 0
+	.login-register
+		background url('../img/259c83edf137cec62f30fd35b069f23d-750+1158.png') center top/cover no-repeat
+		padding 24px 16px
+		.container
+			background #ffffff
+			border-radius 8px
+			.tabs-control
+				font-size 16px
+				color #4a4a4a
+				.top
+					padding 8px 0
+					display flex
+					a
+						flex 1
+						box-sizing border-box
+						height 40px
+						line-height 40px
+						text-align center
+						&+a
+							border-left 1px solid #979797
+				.bar
+					position relative
+					height 4px
+					background #ededed
+					span
+						position absolute
+						left 0
+						top 0
+						bottom 0
+						background #d59ea5
+						width 50%
+						transition 0.3s
+			.form
+			.join-us
+			.help-me
+				display block
+				padding 0 24px
+			.form
+				padding-top 24px
+				.pt16
+					padding-top 16px
+				.mt8
+					margin-top 8px
+				.option
+					display flex
+					justify-content space-between
+					font-size 14px
+					color #4a4a4a
+					line-height 16px
+					height 16px
+					input
+						float left
+					span
+						padding-left 8px
+						float left
+				.m24-0
+					margin 24px 0
+				.radio-container
+					display flex
+					padding-bottom 7px
+					.item
+						flex 1
+						text-align center
+						font-size 14px
+						color #4a4a4a
+						height 20px
+						line-height 20px
+						label
+							display flex
+							align-items center
+							justify-content center
+						span
+							display block
+							padding-left 8px
+				.pb6
+					padding-bottom 6px
+			.tips
+				padding-bottom 15px
+				padding-top 23px
+				font-size 14px
+				color #4a4a4a
+				text-align center
+				&.bdt
+					border-top 1px solid #979797
+				&.tal
+					text-align left
+			.join-us
+				padding-bottom 50px
+			.help-me
+				.tips
+					text-align left
+				.btn-group
+					padding 15px 0 22px
+					display flex
+					justify-content space-between
+					a
+						display flex
+						justify-content center
+						width 140px
+						height 32px
+						text-align center
+						line-height 32px
+						font-size 11px
+						border-radius 4px
+						background #e3e3e3
+						span
+							display block
+							position relative
+							padding-left 36px
+							height 100%
+							&:after
+								content ''
+								position absolute
+								left 0
+								top 0
+								bottom 0
+								width 32px
+								background url('../img/d0cdfb9f40711f5f9deb53c63b97bc23-44+44.svg') left center/100% auto no-repeat
+							&.line
+								&:after
+									background-image url('../img/5a6b1babcda919554346c42d2e5dd40a-44+44.svg')
+			.register-complate
+				padding 0 24px
+				color #4a4a4a
+				text-align center
+				height calc(100vh - 50px - 40px - 48px)
+				h3
+					font-size 24px
+					padding 15vh 0 6vh
+				p
+					font-size 16px
+					line-height 36px
+				.public-button
+					margin-top 6vh
+				
+.public-label
+	font-size 14px
+	color #4a4a4a
+	line-height 20px
+.public-input
+	padding 8px
+	height 44px
+	width 100%
+	font-size 14px
+	line-height 24px
+	border 1px solid #979797
+	box-sizing border-box
+	outline none
+	border-radius 5px
+	appearance none
+	&::placeholder
+		color #9b9b9b
+		font-family 'misrosoft Yahei'
+.public-checkbox
+	appearance none
+	border 1px solid #979797
+	border-radius 4px
+	width 16px
+	height 16px
+	box-sizing border-box
+	outline none
+	&:checked
+		background url('img/187d48749eb50f58ad71727f4e3ca622-24+18.png') center center/80% auto no-repeat
+.public-button
+	display block
+	border-radius 4px
+	height 44px
+	width 100%
+	font-size 14px
+	color #ffffff
+	text-align center
+	line-height 44px
+	background #b98d92
+	border none
+	outline none
+.public-radio
+	position relative
+	appearance none
+	border-radius 50%
+	border 1px solid #979797
+	width 16px
+	height 16px
+	outline none
+	background #ffffff
+	&:after
+		content ''
+		position absolute
+		width 9px
+		height 9px
+		left 50%
+		top 50%
+		transform translate(-50%, -50%) scale(0)
+		background #d59ea5
+		transition 0.3s
+		border-radius 50%
+	&:checked
+		&:after
+			transform translate(-50%, -50%) scale(1)
 .footer
 	background url('../img/7527de8009d52092a45f569b36b26585-375+280.png') center top/cover no-repeat
 	.nav

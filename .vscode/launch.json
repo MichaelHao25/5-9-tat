@@ -19,5 +19,11 @@
             "sourceMaps": true,
             "webRoot": "${workspaceFolder}"
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "启动程序",
+            "program": "${file}"
+        }
     ]
 }

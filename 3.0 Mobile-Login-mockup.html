@@ -284,34 +284,103 @@
             <div class="container">
                 <div class="tabs-control">
                     <div class="top">
-                        <a href="#">登入</a>
-                        <a href="#">加入新會員</a>
+                        <a href="javascript::" class="js-login">登入</a>
+                        <a href="javascript::" class="js-join">加入新會員</a>
                     </div>
                     <div class="bar">
                         <span></span>
                     </div>
                 </div>
-                <form action="#" class="form">
-                    <div class="row pt16">
-                        <div class="public-label">電子信箱</div>
-                        <input type="text" class="public-input mt8" placeholder="abcdf@abc.com">
+                <div class="js-container">
+                    <div class="js-wrapper">
+                        <div class="js-login">
+                            <form action="#" class="form">
+                                <div class="row pt16">
+                                    <div class="public-label">電子信箱</div>
+                                    <input type="text" class="public-input mt8" placeholder="abcdf@abc.com">
+                                </div>
+                                <div class="row pt16">
+                                    <div class="public-label">密碼</div>
+                                    <input type="password" class="public-input mt8" placeholder="6個以上英文字母或數字">
+                                </div>
+                                <div class="row option mt8">
+                                    <label>
+                                        <input type="checkbox" name="" id="" class="public-checkbox">
+                                        <span>保持登入</span>
+                                    </label>
+                                    <a href="#" class="lost-password">忘記密碼?</a>
+                                </div>
+                                <input type="submit" class="public-button m24-0" value="登入">
+                            </form>
+                            <div class="join-us">
+                                <div class="tips bdt">還不是會員嗎？或您已是門市會員</div>
+                                <a href="#" class="public-button">立即註冊新帳號</a>
+                            </div>
+                        </div>
+                        <div class="js-join">
+
+                            <form action="#" class="form">
+                                <div class="row radio-container">
+                                    <div class="item">
+                                        <label>
+                                            <input type="radio" name="a" class="public-radio" checked>
+                                            <span>已是門市會員</span>
+                                        </label>
+                                    </div>
+                                    <div class="item new">
+                                        <label>
+                                            <input type="radio" name="a" class="public-radio">
+                                            <span>註冊新帳號</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-child-container">
+                                    <div class="js-child-wrapper">
+                                        <div class="js-item">
+                                            <div class="tips pb6">如果您已在門市加入會員, 請輸入加入當時填寫的手機號碼與會員卡號, 已同步您的會員資料！</div>
+                                            <div class="row pt16">
+                                                <input type="text" class="public-input mt8" placeholder="手機號碼">
+                                            </div>
+                                            <div class="row pt16">
+                                                <input type="text" class="public-input mt8" placeholder="會員卡號">
+                                            </div>
+                                            <div class="row pt16">
+                                                <input type="button" class="public-button" value="下一步">
+                                            </div>
+                                            <div class="help-me js-padding-0">
+                                                <div class="tips">如不記得會員卡號, 可透過電話或Line@官方帳號詢問TAT客服,我們將盡快為您服務！</div>
+                                                <div class="btn-group">
+                                                    <a href="#" class="btn">
+                                                        <span class="tel">撥打官方客服電話</span>
+                                                    </a>
+                                                    <a href="#" class="btn">
+                                                        <span class="line">Line@官方帳號</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="js-item">
+                                            <div class="row pt16">
+                                                <input type="text" class="public-input mt8" placeholder="電子信箱">
+                                            </div>
+                                            <div class="row pt16">
+                                                <input type="text" class="public-input mt8" placeholder="輸入新密碼(6個以上英文字母或數字)">
+                                            </div>
+                                            <div class="row pt16">
+                                                <input type="text" class="public-input mt8" placeholder="再輸入一次新密碼">
+                                            </div>
+                                            <div class="row pt16">
+                                                <input type="button" class="public-button" value="下一步">
+                                            </div>
+                                            <div class="join-us js-padding-0">
+                                                <div class="tips tal">按下註冊鈕的同時，表示您已詳閱我們的資料使用政策與使用條款，同意使用TAT所提供的服務。</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="row pt16">
-                        <div class="public-label">密碼</div>
-                        <input type="password" class="public-input mt8" placeholder="6個以上英文字母或數字">
-                    </div>
-                    <div class="row option mt8">
-                        <label>
-                            <input type="checkbox" name="" id="" class="public-checkbox">
-                            <span>保持登入</span>
-                        </label>
-                        <a href="#" class="lost-password">忘記密碼?</a>
-                    </div>
-                    <input type="submit" class="public-button m24-0" value="登入">
-                </form>
-                <div class="join-us">
-                    <div class="tips bdt">還不是會員嗎？或您已是門市會員</div>
-                    <a href="#" class="public-button">立即註冊新帳號</a>
                 </div>
             </div>
         </section>

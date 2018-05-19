@@ -15,6 +15,7 @@ body
 .header
 	height 48px
 	overflow hidden
+	transform translateZ(0)
 	.wrap
 		transform translate(0, -50%)
 		transition 0.3s
@@ -248,6 +249,7 @@ body
 				text-overflow ellipsis
 				white-space nowrap
 				&:hover
+				&.active		
 					color #ffffff
 					background #d6b9bc
 	.product-list-container
@@ -367,6 +369,9 @@ body
 			.help-me
 				display block
 				padding 0 24px
+			.js-padding-0
+				padding-left 0
+				padding-right 0
 			.form
 				padding-top 24px
 				.pt16
@@ -464,7 +469,229 @@ body
 					line-height 36px
 				.public-button
 					margin-top 6vh
-				
+	.vip-center-contact-us
+		padding 16px
+		.row
+			&+.row
+				padding-top 16px
+	.vip-center-my-account
+		.item
+			padding 0 16px
+			border-bottom 8px solid #d8d8d8
+		.user-name
+			padding-top 16px
+			font-size 14px
+			color #4a4a4a
+			line-height 20px
+			font-weight 500
+			h3
+			.row
+				padding-bottom 16px
+			.row
+				display flex
+				justify-content space-between
+		.order
+			font-size 14px
+			color #4a4a4a
+			&.more-info
+				position relative
+				&:after
+					content ''
+					position absolute
+					right 0
+					top 0
+					width 20px
+					height 20px
+					top 16px
+					transform rotateZ(90deg)
+					background url('../img/82bfa42ab12f5da394c7a585f67e7e41-44+44.svg') center center/20px auto no-repeat
+					transition 0.3s
+				&.active
+					&:after
+						transform rotateZ(0)
+			h3
+				padding 16px 0
+				line-height 20px
+				font-weight 500
+			.row
+				font-size 12px
+				display flex
+			.date
+				padding-right 16px
+			.cost
+			.status
+				padding-left 16px
+			.child-item
+				padding-top 16px
+				padding-bottom 16px
+				font-size 12px
+				line-height 16px
+				border-bottom 1px solid #d8d8d8
+				&.bdbn
+					border-bottom none
+				.row
+					&+.row
+						padding-top 8px
+				&+.child-item
+					margin-top 8px
+		.order-details-info
+			display none
+			.order-product-info
+				padding 16px 0
+				border-top 1px solid #d8d8d8
+				.row
+					display flex
+				.pic
+					flex 0 0 80px
+					margin 0
+					width 80px
+					img
+						display block
+						width 100%
+				.name
+					padding-left 16px
+					box-sizing border-box
+					flex 1 1 auto
+					font-size 12px
+					color #4a4a4a
+					line-height 20px
+				.num
+				.cost
+				.vip-cost
+				.total
+					flex 1
+					font-size 12px
+					color #4a4a4a
+					line-height 20px
+					text-align center
+					span
+						display block
+						padding 16px 0 10px
+						&+span
+							padding 0
+			.order-product-sale
+				display flex
+				justify-content space-between
+				font-size 12px
+				line-height 48px
+				border-top 1px solid #d8d8d8
+				border-bottom 1px solid #d8d8d8
+			.order-cost-info
+				border-bottom 1px solid #d8d8d8
+				.row
+					display flex
+					justify-content space-between
+					padding 8px 0
+					font-size 12px
+					color #4a4a4a
+					line-height 2
+					.cd59ea5
+						color #d59ea5
+			.sold-info
+				padding-bottom 16px
+				h3
+					padding-top 16px
+					font-size 14px
+					color #4a4a4a
+					line-height 16px
+					font-weight 500
+				p
+					font-size 12px
+					color #4a4a4a
+					line-height 2
+		.vip-center-my-account-sale
+			h3
+				padding 16px 0
+				line-height 20px
+				font-weight 500
+				font-size 14px
+				color #4a4a4a
+			.swiper-slide
+				width 165px
+				height 76px
+			.child-item
+				background url('../img/7c443322ac5e417717e70838151839d7-525+258.png') center center /100% 100% no-repeat
+				width 165px
+				height 76px
+				display flex
+				flex-direction column
+				justify-content space-between
+				align-items flex-start
+				padding 6px 15px 13px
+				box-sizing border-box
+				transition 0.3s
+				&.used
+					background-image url('../img/62367fd05fc5cc3ddf590ec3ec5dabfe-525+258.png')
+				.tips
+					width 100px
+					font-size 13px
+					color #cc9d9d
+					line-height 15px
+				.key
+					font-size 9px
+					color #747474
+					transform scale(0.7)
+					transform-origin left center
+					line-height 0
+				.date
+					font-size 10px
+					color #9b9b9b
+					transform scale(0.7)
+					line-height 0
+					transform-origin left center
+		.bouns
+			color #4a4a4a
+			text-align center
+			background #d5baba
+			h3
+				padding 16px 0
+				font-size 14px
+			.value
+				padding-bottom 20px
+				display flex
+				align-items center
+				justify-content center
+				font-size 28px
+				line-height 36px
+				span
+					padding-left 50px
+					background url('../img/1a3510f03e8ced1d718c248198a7a225-72+72.png') left center/auto 100% no-repeat
+			&+.item
+				border none
+				.chil-item
+					padding-top 16px
+		a.more
+			height 50px
+			font-size 12px
+			color #d59ea5
+			line-height 50px
+
+.public-textarea
+	width 100%
+	height 170px
+	box-sizing border-box
+.public-select
+	text-align left
+	color #979797
+	background url('../img/82bfa42ab12f5da394c7a585f67e7e41-44+44.svg') right 10px center/20px auto no-repeat
+.public-back
+	position relative
+	padding-left 28px
+	display block
+	height 24px
+	font-size 14px
+	color #4a4a4a
+	line-height 24px
+	&:after
+		content ''
+		position absolute
+		left 0
+		t 0
+		bottom 0
+		width 24px
+		height 24px
+		background url('../img/2504f3c1f5cea93ae0a9d72740a12f9a-24+48.png') center center/auto 60% no-repeat
+		
 .public-label
 	font-size 14px
 	color #4a4a4a
@@ -572,6 +799,7 @@ body.all-product-hide-main-footer
 	flex-direction column
 	background #ffffff
 	display none
+	transform translateZ(0)
 	.item
 		position relative
 		display flex
@@ -666,3 +894,40 @@ body.all-product-hide-main-footer
 	input
 		appearance none
 		font-size 16px
+
+
+
+.js-container
+	position relative
+	overflow hidden
+	transition 0.3s
+	height 467px
+	&.active
+		.js-wrapper
+			transform translateX(-100%)
+	.js-wrapper
+		display flex
+		align-items flex-start
+		will-change transform
+		transition 0.3s
+		.js-login
+		.js-join
+			flex 0 0 100%
+			width 100%
+
+
+
+.js-child-container
+	position relative
+	overflow hidden
+	transition 0.3s
+	&.active
+		.js-child-wrapper
+			transform translateX(-100%)
+	.js-child-wrapper
+		display flex
+		align-items flex-start
+		will-change transform
+		transition 0.3s
+		.js-item
+			flex 0 0 100%

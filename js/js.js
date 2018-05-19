@@ -88,9 +88,18 @@ $('.main .login-register .container .form .radio-container .item').on('click', f
     // js-join
 })
 
+$('.main .shop-car-container .shop-car-product-info .delete').on('click',function() {
+    $(this).parents('.shop-car-product-info').remove();
+})
 
 
-
+$('.main .shop-car-container .shop-car-product-list-title').on('click',function() {
+    $(this).toggleClass('active');
+    $('.main .shop-car-container .shop-car-product-list').slideToggle();
+})
+$('.main .about-us-container .issue .title').on('click',function() {
+    $(this).toggleClass('active').siblings('.content').slideToggle();
+})
 
 
 var mySwiper = new Swiper('.banner .swiper-container', {

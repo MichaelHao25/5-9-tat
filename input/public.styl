@@ -167,6 +167,19 @@ body
 	.card
 		position relative
 		margin 16px 8px 0
+		&.new-sms
+			h3
+				top 12px
+				left 12px
+				font-size 12px
+				color #4a4a4a
+				font-weight normal
+			p
+				top 30px
+				left 12px
+				font-size 18px
+				color #4a4a4a
+				font-weight 500
 		h3
 			position absolute
 			top 11px
@@ -470,10 +483,111 @@ body
 				.public-button
 					margin-top 6vh
 	.vip-center-contact-us
-		padding 16px
+		padding 0 16px
+		.tabs-control			
+			font-size 14px
+			color #4a4a4a
+			.top
+				padding 10px 0
+				display flex
+				a
+					flex 1
+					box-sizing border-box
+					height 20px
+					line-height 20px
+					text-align center
+					&+a
+						border-left 1px solid #979797
+			.bar
+				position relative
+				height 2px
+				background #ededed
+				span
+					position absolute
+					left 0
+					top 0
+					bottom 0
+					background #d59ea5
+					width 50%
+					transition 0.3s
 		.row
 			&+.row
 				padding-top 16px
+		.pt24
+			padding-top 24px
+		.pt8
+			padding-top 8px
+		.pt16
+			padding-top 16px
+		.radio-container
+			display flex
+			padding-bottom 7px
+			justify-content flex-start
+			.item
+				text-align center
+				font-size 14px
+				color #4a4a4a
+				height 20px
+				line-height 20px
+				margin-right 32px
+				label
+					display flex
+					align-items center
+					justify-content center
+				span
+					display block
+					padding-left 8px
+		.vip-center-contact-us-issue
+			padding-top 16px
+			font-size 12px
+			color #4a4a4a
+			line-height 20px
+			a
+				color #d59ea5
+	.vip-center-sale
+		.item
+			border-bottom 8px solid #d8d8d8
+			h3
+				padding 16px
+				font-size 14px
+				color #4a4a4a
+				line-height 20px
+		.wrap
+			padding 0 16px
+			display flex
+			justify-content space-between
+			flex-wrap wrap
+		.child-item
+			background url('../img/7c443322ac5e417717e70838151839d7-525+258.png') center center /100% 100% no-repeat
+			width 165px
+			height 76px
+			margin-bottom 16px
+			display flex
+			flex-direction column
+			justify-content space-between
+			align-items flex-start
+			padding 6px 15px 13px
+			box-sizing border-box
+			transition 0.3s
+			&.used
+				background-image url('../img/62367fd05fc5cc3ddf590ec3ec5dabfe-525+258.png')
+			.tips
+				width 100px
+				font-size 13px
+				color #cc9d9d
+				line-height 15px
+			.key
+				font-size 9px
+				color #747474
+				transform scale(0.7)
+				transform-origin left center
+				line-height 0
+			.date
+				font-size 10px
+				color #9b9b9b
+				transform scale(0.7)
+				line-height 0
+				transform-origin left center
 	.vip-center-my-account
 		.item
 			padding 0 16px
@@ -665,11 +779,262 @@ body
 			font-size 12px
 			color #d59ea5
 			line-height 50px
+	.shop-car-container
+		.shop-car-steps
+			display flex
+			font-size 12px
+			color #4a4a4a
+			line-height 17px
+			.item
+				padding 20px 0 15px
+				flex 1
+				text-align center
+				&.active
+					color #d59ea5
+		.shop-car-bar
+			position relative
+			height 4px
+			overflow hidden
+			background #ededed
+			span
+				position absolute
+				left 0
+				top 0
+				bottom 0
+				width 0
+				background #d59ea5
+				transition 0.3s
+				width 33.33%
+		.shop-car-product-info
+			position relative
+			padding 16px 0
+			margin 0 8px
+			border-bottom 1px solid #d8d8d8
+			.delete
+				position absolute
+				top 16px
+				right 0
+				width 30px
+				height 30px
+				img
+					display block
+					width 100%
+			.row
+				display flex
+			.pic
+				flex 0 0 100px
+				margin 0
+				width 100px
+				img
+					display block
+					width 100%
+			.name
+				padding-left 8px
+				box-sizing border-box
+				flex 1 1 auto
+				font-size 12px
+				color #4a4a4a
+				line-height 20px
+			.num
+			.cost
+			.vip-cost
+			.total
+				flex 1
+				font-size 12px
+				color #4a4a4a
+				line-height 20px
+				text-align left
+				span
+					display block
+					padding 8px 0
+			.public-select
+				height 36px
+				width 64px
+				padding-top 0
+				padding-bottom 0
+				background-size 20%
+				background-position right 6px center
+		.more-info
+			margin 0 8px
+			h3
+				position relative
+				padding-top 16px
+				font-size 14px
+				color #000000
+				line-height 26px
+				&:after
+					content attr(data-tips)
+					position absolute
+					right 0
+					top 16px
+					bottom 0
+					font-size 12px
+					color #888888
+					line-height 26px
+			.wraning
+				padding-top 8px
+				font-size 12px
+				color #000000
+				line-height 26px
+				font-weight 500
+			.pt8
+				padding-top 8px
+		.cost-info
+			padding 40px 0 16px
+			margin 0 8px
+			border-bottom 1px solid #d8d8d8
+			&.pt16
+				padding-top 16px
+			.row
+				display flex
+				justify-content space-between
+				font-size 14px
+				color #000000
+				line-height 26px
+				font-weight 500
+			.cd59ea5
+				padding-top 20px
+				color #d59ea5
+		.btn-control
+			padding 16px 5px 0
+			a
+				margin-top 8px
+		.shop-car-product-list-title
+			padding 16px 0
+			margin 0 8px
+			display flex
+			justify-content space-between
+			font-size 14px
+			color #4a4a4a
+			position relative
+			padding-right 20px
+			&.active
+				&:after
+					transform translateY(-50%) rotateZ(0)	
+			&:after
+				content ''
+				position absolute
+				right 0
+				top 50%
+				width 20px
+				height 20px
+				transform translateY(-50%) rotateZ(90deg)
+				background url('../img/82bfa42ab12f5da394c7a585f67e7e41-44+44.svg') center center/20px auto no-repeat
+				transition 0.3s
+			.c9a
+				color #9a9a9a
+		.shop-car-product-list
+			display none
+			.shop-car-product-info
+				padding-top 0
+				border none
+				
+		.shop-car-buyer
+		.shop-car-bank-info
+			margin 0 8px
+			padding 16px 0
+			font-size 14px
+			color #4a4a4a
+			line-height 20px
+			border-top 1px solid #d8d8d8
+			h3
+				padding-bottom 8px
+				font-weight 500
+		.shop-car-bank-info
+			h3
+				padding 16px 0
+			.line
+				display flex
+				justify-content space-between
+				font-size 15px
+				line-height 36px
+				border-bottom 1px solid #d8d8d8
+	.new-sms-container
+		color #4a4a4a
+		.pic
+			img
+				display block
+				width 100%
+		h3
+			padding 20px 16px 30px
+			font-size 22px
+		p
+			padding 0 16px 30px 16px
+			font-size 14px
+			line-height 1.5
+	.information-container
+		.map
+			img
+				display block
+				width 100%
+		.list
+			padding 0 16px
+			.item
+				padding 30px 0
+				border-bottom 1px solid #d8d8d8
+				color #4a4a4a
+				font-size 14px
+				line-height 22px
+				.name
+					padding-left 22px
+					font-weight 50
+					background url('img/7a8109cbc5d56ce7597aef9dc9b951dd-44+44.svg') left center/auto 80% no-repeat
+				.tel
+					padding-left 22px
+					background url('img/d0cdfb9f40711f5f9deb53c63b97bc23-44+44.svg') left center /auto 80% no-repeat
+				.location
+					padding 8px 0
+	.about-us-container
+		color #4a4a4a
+		h3
+			text-align center
+			font-size 18px
+			color #4a4a4a
+			line-height 25px	
+			padding 30px 0
+			font-weight 60
+		.base-info
+			padding 0 16px
+			.pic
+				img
+					display block
+					width 100%
+			p
+				padding-top 24px
+				font-size 15px
+				line-height 30px
+		.issue
+			padding 0 1px
+			.title
+				position relative
+				font-size 15px
+				line-height 50px
+				height 50px
+				border-bottom 1px solid #d8d8d8
+				&.active
+					&:after
+						transform translateY(-50%) rotateZ(0)
+				&:after
+					content ''
+					position absolute
+					right 0
+					top 50%
+					width 20px
+					height 20px
+					transform translateY(-50%) rotateZ(90deg)
+					background url('../img/82bfa42ab12f5da394c7a585f67e7e41-44+44.svg') center center/20px auto no-repeat
+					transition 0.3s
+			.content
+				display none
+				padding 24px 0
+				font-size 15px
+				line-height 30px
+				border-bottom 1px solid #d8d8d8
 
-.public-textarea
-	width 100%
-	height 170px
-	box-sizing border-box
+
+
+
+
 .public-select
 	text-align left
 	color #979797
@@ -732,6 +1097,9 @@ body
 	background #b98d92
 	border none
 	outline none
+	&.public-continue
+		color #4a4a4a
+		background #e8dada
 .public-radio
 	position relative
 	appearance none
@@ -755,6 +1123,10 @@ body
 	&:checked
 		&:after
 			transform translate(-50%, -50%) scale(1)
+.public-textarea
+	width 100%
+	height 170px
+	box-sizing border-box
 .footer
 	background url('../img/7527de8009d52092a45f569b36b26585-375+280.png') center top/cover no-repeat
 	.nav

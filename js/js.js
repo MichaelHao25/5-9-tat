@@ -23,7 +23,7 @@ $(window).on('scroll', function (e) {
     if (parseInt($('.all-product-target').attr('data-disabled'))) {
         var i_nav_pre_value = parseInt($('.js-fix-header').attr('data-scroll-top')),
             i_scrolltop = $(window).scrollTop();
-        console.log(i_scrolltop);
+        // console.log(i_scrolltop);
         if (i_nav_pre_value > i_scrolltop) {
             i_nav_pre_value = i_scrolltop
             $('.js-fix-header').attr('data-scroll-top', i_nav_pre_value)
@@ -167,6 +167,6 @@ document.querySelectorAll('.vip-center-my-account .swiper-container').length>0&&
 document.querySelectorAll('.product-list-type .swiper-container').length>0&& new Swiper('.product-list-type .swiper-container', {
     slidesPerView: 'auto',
     onInit: function (swiper) {
-        swiper.slideTo(parseInt(swiper.container[0].getAttribute('data-init-index')), 1000, false);
+        !!swiper.container[0].getAttribute('data-init-index')&&swiper.slideTo(parseInt(swiper.container[0].getAttribute('data-init-index')), 1000, false);
     }
 })

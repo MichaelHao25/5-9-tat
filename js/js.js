@@ -23,8 +23,10 @@ $(window).on('scroll', function (e) {
     if (parseInt($('.all-product-target').attr('data-disabled'))) {
         var i_nav_pre_value = parseInt($('.js-fix-header').attr('data-scroll-top')),
             i_scrolltop = $(window).scrollTop();
+            i_scrolltop<=0 &&(i_scrolltop=0);
+            i_scrolltop>=document.body.scrollHeight-window.innerHeight&&(i_scrolltop=document.body.scrollHeight-window.innerHeight)
         // console.log(i_scrolltop);
-        if (i_nav_pre_value > i_scrolltop) {
+        if (i_nav_pre_value > i_scrolltop||i_scrolltop==0) {
             i_nav_pre_value = i_scrolltop
             $('.js-fix-header').attr('data-scroll-top', i_nav_pre_value)
             $('.js-fix-header').removeClass('active');
@@ -32,6 +34,7 @@ $(window).on('scroll', function (e) {
             i_nav_pre_value = i_scrolltop;
             $('.js-fix-header').attr('data-scroll-top', i_nav_pre_value)
             $('.js-fix-header').addClass('active');
+            
         }
     }
 })

@@ -171,7 +171,7 @@ document.querySelectorAll('.product-list-type .swiper-container').length > 0 && 
     slidesPerView: 'auto',
     centeredSlides: true,
     onTap: function (swiper) {
-        swiper.slideTo(swiper.clickedIndex, 1000, false)
+    	swiper.slideTo(swiper.clickedIndex, 1000, false)
     },
     onInit: function (swiper) {
         !!swiper.container[0].getAttribute('data-init-index') && swiper.slideTo(parseInt(swiper.container[0].getAttribute('data-init-index')), 1000, false);

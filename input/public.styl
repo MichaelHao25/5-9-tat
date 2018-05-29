@@ -280,21 +280,6 @@ body
 				background #fff
 				&.swiper-pagination-bullet-active
 					opacity 1
-	.contact-us
-		margin-top 16px
-		display flex
-		height 48px
-		justify-content flex-start
-		align-items center
-		border-top 1px solid #d8d8d8
-		border-bottom 1px solid #d8d8d8
-		a
-			display block
-			width 32px
-			margin-left 8px
-			img
-				display block
-				width 100%
 	.subscribe
 		padding 8px
 		.form
@@ -777,10 +762,11 @@ body
 				.row
 					display flex
 					justify-content space-between
-					padding 8px 0
 					font-size 12px
 					color #4a4a4a
 					line-height 2
+					&:last-child
+						padding 8px 0
 					.cd59ea5
 						color #d59ea5
 			.sold-info
@@ -1069,7 +1055,7 @@ body
 				line-height 22px
 				.name
 					padding-left 22px
-					font-weight 50
+					font-weight bold
 					background url('img/7a8109cbc5d56ce7597aef9dc9b951dd-44+44.svg') left center/auto 80% no-repeat
 				.tel
 					display block
@@ -1162,24 +1148,31 @@ body
 				border 1px solid #979797
 				border-radius 5px
 				input
+				textarea
+					border none
+					background none
+					outline none
+					border-radius 0
+				.input
 					width calc(100% - 56px)
-					padding 10px
-					height 40px
-					line-height 20px
+					margin 5px 0
+					padding 0 10px
+					height 30px
+					line-height 1.5
 					border none
 					background none
 					border-radius 0
 					box-sizing border-box
 					outline none
-					
-				a
+					-webkit-overflow-scrolling touch
+					&::-webkit-scrollbar
+						display none
+				.sent
 					float right
 					width 56px
 					height 100%
-					img
-						display block
-						width 100%
-						height 100%
+					background url('../img/adeab04dd5218f60f27ff7de14910f74-168+120.png') center center/100% 100% no-repeat
+					
 		.resuit-box
 			height calc(100% - 72px)
 			overflow scroll
@@ -1332,7 +1325,7 @@ body
 			color #000000
 			line-height 20px
 	.copy-right
-		padding-top 38px
+		padding-top 20px
 		a
 		p
 			display block
@@ -1518,3 +1511,20 @@ body.all-product-hide-main-footer
 	.js-fix-header
 		position relative
 		transform translateX(0)
+
+.contact-us
+	margin-top 16px
+	display flex
+	height 48px
+	justify-content center
+	align-items center
+	// border-top 1px solid #d8d8d8
+	// border-bottom 1px solid #d8d8d8
+	a
+		display block
+		width 32px
+		&+a
+			margin-left 10px
+		img
+			display block
+			width 100%

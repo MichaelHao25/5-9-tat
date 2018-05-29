@@ -107,6 +107,8 @@ body
 	text-align center
 	border-top 1px solid #d8d8d8
 	border-bottom 1px solid #d8d8d8
+	&.bdtn
+		border-top none
 	a
 		display block
 		flex 1
@@ -164,6 +166,21 @@ body
 				width 32px
 	.hot
 		padding-bottom 16px
+		&.hot-child
+			padding-left 8px
+			padding-right 8px
+			h3
+				padding 8px 0
+				font-size 16px
+				color #d59ea5
+				font-weight 500
+				line-height 30px
+				text-align left
+				border-bottom 1px solid #d8d8d8
+			a
+				h4
+				.cost
+					font-size 14px
 		h3
 			padding 22px 0 32px 0
 			font-size 24px
@@ -209,6 +226,33 @@ body
 				font-size 18px
 				color #4a4a4a
 				font-weight 500
+		&.new-sms-5-29
+			margin 0
+			position relative
+			border-bottom 8px solid #d8d8d8
+			&:after
+				content ''
+				position absolute
+				bottom 0
+				left 0
+				right 0
+				background #b6b6b6
+				height 1px
+			.item
+				a
+				img
+					border-radius 0
+			h3
+			p
+				position static
+				padding-left 16px
+			h3
+				padding-top 8px
+				padding-bottom 4px
+				font-size 12px
+				line-height 20px
+			p
+				padding-bottom 8px
 		h3
 			position absolute
 			top 11px
@@ -623,6 +667,8 @@ body
 		.item
 			padding 0 16px
 			border-bottom 8px solid #d8d8d8
+			&.bdbn
+				border-bottom none
 		.user-name
 			padding-top 16px
 			font-size 14px
@@ -635,11 +681,16 @@ body
 			.row
 				display flex
 				justify-content space-between
+			.logout
+				color #d59ea5
 		.order
 			font-size 14px
 			color #4a4a4a
 			&.more-info
 				position relative
+				&.dn
+					&:after
+						display none
 				&:after
 					content ''
 					position absolute
@@ -744,6 +795,16 @@ body
 					font-size 12px
 					color #4a4a4a
 					line-height 2
+				.mt16
+					margin-top 16px
+				.pay-status
+					position relative
+					a
+						position absolute
+						right 0
+						top 16px
+						max-width 100px
+
 		.vip-center-my-account-sale
 			h3
 				padding 16px 0
@@ -753,16 +814,16 @@ body
 				color #4a4a4a
 			.swiper-slide
 				width 165px
-				height 76px
+				height 84px
 			.child-item
 				background url('../img/7c443322ac5e417717e70838151839d7-525+258.png') center center /100% 100% no-repeat
 				width 165px
-				height 76px
+				height 84px
 				display flex
 				flex-direction column
 				justify-content space-between
 				align-items flex-start
-				padding 6px 15px 13px
+				padding 10px 15px 18px
 				box-sizing border-box
 				transition 0.3s
 				&.used
@@ -1011,6 +1072,7 @@ body
 					font-weight 50
 					background url('img/7a8109cbc5d56ce7597aef9dc9b951dd-44+44.svg') left center/auto 80% no-repeat
 				.tel
+					display block
 					padding-left 22px
 					background url('img/d0cdfb9f40711f5f9deb53c63b97bc23-44+44.svg') left center /auto 80% no-repeat
 				.location
@@ -1061,9 +1123,107 @@ body
 				font-size 15px
 				line-height 30px
 				border-bottom 1px solid #d8d8d8
-
-
-
+	.server-5-29
+		.header
+			display flex
+			justify-content space-between
+			align-items center
+			height 48px
+			border-bottom 8px solid #d8d8d8
+			h1
+				font-size 16px
+				color #d59ea5
+				line-height 22px
+			.back
+				width 48px
+				height 48px
+				top 16px
+				transform rotateZ(90deg)
+				background url('../img/82bfa42ab12f5da394c7a585f67e7e41-44+44.svg') center center/20px auto no-repeat
+				transition 0.3s
+			.right-icon
+				width 48px
+				height 48px
+	.server-chat-5-29
+		height 539px
+		background linear-gradient(to bottom, #fdf9f9, #faebeb 51%, #f1e4e4);
+		display flex
+		flex-direction column
+		justify-content space-between
+		.edit-box
+			height 72px
+			display flex
+			align-items center
+			justify-content center
+			background #ffffff
+			.container
+				width 340px
+				height 40px
+				border 1px solid #979797
+				border-radius 5px
+				input
+					width calc(100% - 56px)
+					padding 10px
+					height 40px
+					line-height 20px
+					border none
+					background none
+					border-radius 0
+					box-sizing border-box
+					outline none
+					
+				a
+					float right
+					width 56px
+					height 100%
+					img
+						display block
+						width 100%
+						height 100%
+		.resuit-box
+			height calc(100% - 72px)
+			overflow scroll
+			padding-bottom 16px
+			&::-webkit-scrollbar
+				display none
+			.row
+				display flex
+				padding 16px 16px 0
+				&.my
+					justify-content flex-end
+					.pic
+						order 1	
+					.text
+						&:after
+							left auto
+							right -3px
+							transform rotateZ(45deg)
+				.pic
+					img
+						width 40px
+						height 40px
+				.text
+					position relative
+					background #ffffff
+					margin 0 13px
+					width 170px
+					padding 10px
+					border-radius 4px
+					font-size 12px
+					line-height 2
+					border 1px solid #d8d8d8
+					&:after
+						content ''
+						position absolute
+						left -3px
+						top 10px
+						width 5px
+						height 5px
+						border-top 1px solid #d8d8d8
+						border-right 1px solid #d8d8d8
+						background #ffffff
+						transform rotateZ(-135deg)
+				
 
 
 .public-select

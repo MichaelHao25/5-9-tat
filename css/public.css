@@ -1462,6 +1462,7 @@ body {
   height: calc(100% - 0.72rem);
   overflow: scroll;
   padding-bottom: 0.16rem;
+  -webkit-overflow-scrolling: touch;
 }
 .main .server-chat-5-29 .resuit-box::-webkit-scrollbar {
   display: none;
